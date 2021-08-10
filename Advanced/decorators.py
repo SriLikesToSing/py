@@ -20,7 +20,9 @@ def calc_cube(numbers):
     result = []
     for number in numbers:
         result.append(number*number*number)
+        return time_it(number*number*number) + calc_square(numbers)
     return result
+
 
 array = range(1,100000)
 out_square = calc_square(array)
